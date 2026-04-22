@@ -1,5 +1,5 @@
 # For Cloudflare Workers Builds (GitHub/GitLab):
-# set Root directory in dashboard to the folder containing this file.
+# for this repo, set Workers Builds Root directory to "." (repo root) or leave it blank.
 # Workers Builds root-directory is configured in dashboard build settings.
 name = "bubble-browser-backend"
 main = "src/worker.ts"
