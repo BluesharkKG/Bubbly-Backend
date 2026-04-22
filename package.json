@@ -1,8 +1,6 @@
 {
   "name": "bubble-browser-backend",
   "version": "1.0.0",
-  "description": "Cloudflare Workers backend for Bubble Browser — secure edge proxy",
-  "main": "src/worker.ts",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
