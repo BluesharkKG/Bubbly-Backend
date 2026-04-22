@@ -1,5 +1,25 @@
 # Bubble Browser Backend — Deployment Guide
  
+## Cloudflare GitHub Builds root-directory fix (for nested repos)
+
+If your repository is a monorepo or your Worker lives in a subfolder, Cloudflare Workers Builds must run from the Worker folder (the folder containing `package.json` and `wrangler.toml`).
+
+For this project, set **Workers & Pages → your Worker → Settings → Builds → Root directory** to:
+
+```
+bubble-backend
+```
+
+Then keep the deploy command as:
+
+```
+npx wrangler deploy
+```
+
+> Note: Workers Builds does not use Wrangler `custom build` config for this setting; Root directory must be configured in the dashboard build settings.
+
+---
+
 ## Prerequisites
  
 - Node.js ≥ 18
